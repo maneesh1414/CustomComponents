@@ -1,0 +1,36 @@
+// out: ./styles.css, compress: true
+
+.vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.modal{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top:0px;
+  left: 0px;
+  background-color: fade(Black, 30%);
+  &.open {
+    display: block !important;
+  }
+  &.close {
+    display: none !important;
+  }
+  &Body{
+    position: relative;
+    padding: 10px;
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    margin: auto;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
